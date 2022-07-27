@@ -3,7 +3,7 @@
 layout: col-sidebar
 title: OWASP DevSecOps 検証標準
 tags: DSOVS
-level: 1
+level: 2
 type: documentation
 pitch: DSOVS はソフトウェア開発ライフサイクルの中でセキュリティを実装しようとする際のギャップを特定するためのフレームワークです
 
