@@ -34,6 +34,7 @@ OWASP DevSecOps 検証標準には七つのフェーズがあり、ほとんど�
 * 設計 (Design)
   * DES-001 セキュリティアーキテクチャ設計レビュー (Security Architecture Design Reviews)
   * DES-002 脅威モデリング (Threat Modelling)
+  * DES-003 セキュアドキュメント (Secure Documentation)
 * コード/ビルド (Code/Build)
   * CODE-001 セキュア開発環境 (Secure Development Environment)
   * CODE-002 ハードコードされたシークレットの検出 (Hardcoded Secrets Detection)
@@ -66,3 +67,4 @@ OWASP DevSecOps 検証標準には七つのフェーズがあり、ほとんど�
   * OPR-004 アプリケーションセキュリティログ記録 (Application Security Logging)
   * OPR-005 脆弱性の開示 (Vulnerability Disclosure)
   * OPR-006 証明書管理 (Certificate Management)
+  * OPR-007 攻撃対象領域管理 (Attack Surface Management)
