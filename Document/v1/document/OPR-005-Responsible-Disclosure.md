@@ -16,52 +16,52 @@
 
 ## レベル 0 - 脆弱性開示ポリシーがない
 
-At this level of security maturity, there are no defined ways to receive security vulnerabilities.
+このレベルでのセキュリティ成熟度では、セキュリティ脆弱性を受け取る方法が定義されていません。
 
 ## レベル 1 - 脆弱性開示ポリシーが存在する
 
-At level one, the product has a defined responsible disclosure policy with clear instructions on how to send vulnerability reports, as well as a clear definition of scope. 
+レベル 1 では、製品に責任ある開示ポリシーが定義されており、脆弱性レポートの送信方法に関する明確な指示やスコープの明確な定義が示されています。
 
-Typically this will be security e-mail such as (security@company.com) and will processed manually by internal teams.
+通常、これは (security@company.com) などのセキュリティ電子メールであり、内部チームによって手作業で処理されます。
 
 ## レベル 2 - 脆弱性開示はソフトウェアを使用して管理および追跡している
 
-Responsible vulnerabity disclosure enables external security researchers to report vulnerabilities that they have discovered in software. 
+責任ある脆弱性開示により、外部のセキュリティ研究者はソフトウェアで発見した脆弱性を報告できます。
 
-It is important for these vulnerabilities to be stored and tracked the same way as internally found vulnerabilities, in order to ensure that they do not slip through the gaps. 
+これらの脆弱性は内部で発見された脆弱性と同じ方法で保存および追跡して、ギャップをすり抜けないようにすることが重要です。
 
-This helps ensure that all issues are managed accordingly and that the vulnerabilities reported from external sources make their way into the secure software development lifecycle. 
+これによりすべての問題が適切に管理され、外部ソースから報告された脆弱性がセキュアソフトウェア開発ライフサイクルに組み込まれるようになります。
 
-By properly tracking and managing these issues with issue tracking software, developers can ensure that any potential security threats are addressed quickly and effectively. 
+課題追跡ソフトウェアでこれらの問題を適切に追跡及び管理することにより、開発者は潜在的なセキュリティ脅威に迅速かつ効率的に対処するようにできます。
 
-This helps ensure that applications remain secure and that users can trust the software they are using.
+これによりアプリケーションがセキュアであり続け、ユーザーが使用しているソフトウェアを信頼できるようになります。
 
 ## レベル 3 - 協調的脆弱性開示プログラムが存在する
 
-A coordinated vulnerability disclosure program is critical for the maturity of a secure software development lifecycle.
+協調的脆弱性開示プログラムはセキュアソフトウェア開発ライフサイクルの成熟に不可欠です。
 
-This program helps ensure that any vulnerabilities discovered in software are addressed quickly and effectively, while also helping to build trust between software users and developers. 
+このプログラムはソフトウェアで発見された脆弱性が迅速かつ効率的に対処されるようにすると同時に、ソフトウェアユーザーと開発者の間の信頼関係を構築するのにも役立ちます。
 
-By providing an organized and standardized framework for vulnerability disclosure, firms can demonstrate their commitment to security and provide transparency around the process. 
+脆弱性開示のための組織的かつ標準化されたフレームワークを提供することにより、企業はセキュリティへの取り組みを示し、プロセスに関する透明性を提供できます。
 
-Additionally, by coordinating with other organizations, firms can benefit from the expertise and knowledge of others. This helps ensure that all vulnerabilities are managed accordingly and that secure software development is the priority.
+さらに、他の組織と連携することで、企業は他の組織の専門知識や知識から利益を得ることができます。これによりすべての脆弱性が適切に管理され、セキュアソフトウェア開発が優先されることが確保されます。
 
-# Notable Tools 
+# 注目すべきツール
 
-⚠️ **Disclaimer**
+⚠️ **免責事項**
 
-Apart from official OWASP Projects, the tools in this section have been chosen on the basis of their proven capabilities alone and there is no other relationship between the DSOVS project leaders and the creators or vendors who maintain them. 
+OWASP の公式プロジェクトは別として、このセクションのツールはその実績のある機能のみに基づいて選択されており、DSOVS プロジェクトリーダーとそれらを保守する作成者やベンダーとの間には他の関係はありません。
 
-If you have a suggestion for a notable tool please [💡 Suggest a Tool](https://github.com/OWASP/www-project-devsecops-verification-standard/discussions/categories/ideas) 
+注目すべきツールの提案がある場合には [💡 ツールを提案](https://github.com/OWASP/www-project-devsecops-verification-standard/discussions/categories/ideas) してください。
 
 ## [SECURITY.TXT](https://github.com/securitytxt/security-txt)
 
-security.txt provides a way for websites to define security policies. The security.txt file sets clear guidelines for security researchers on how to report security issues. security.txt is the equivalent of robots.txt, but for security issues.
+security.txt はウェブサイトがセキュリティポリシーを定義する方法を提供します。security.txt ファイルはセキュリティ研究者がセキュリティ問題を報告するための明確なガイドラインを設定します。security.txt は robots.txt と同等ですが、セキュリティ問題のためのものです。
 
 
-## 🙏 Credits
+## 🙏 クレジット
 
-We could not do this without the amazing contributions made to the community so we'd like to take the time to show our appreciation to any external inspiration used. 
+コミュニティへの素晴らしい貢献なしにはこれを実現できませんでした。使用された外部からのインスピレーションに感謝の意を表します。
 
 * [EdOverflow](https://github.com/EdOverflow)
 * [Katie Moussouris](https://twitter.com/k8em0)
