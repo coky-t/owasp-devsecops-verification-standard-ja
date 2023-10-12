@@ -9,7 +9,7 @@ pitch: DSOVS はソフトウェア開発ライフサイクルの中でセキュ�
 
 # OWASP DevSecOps 検証標準
 
-<img width="180px" align="right" style="float: right;" src="document/images/logo.svg"></a>
+<img width="180px" align="right" style="float: right;" src="document/images/logo.svg">
 
 OWASP DevSecOps 検証標準 (OWASP DevSecOps Verification Standard, DSOVS) はあらゆるソフトウェアプロジェクトや組織におけるベースライン要件を定義するオープンソースフレームワークです。DSOVS は以下の目的で使用できます。
 
