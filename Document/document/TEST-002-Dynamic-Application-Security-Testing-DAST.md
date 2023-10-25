@@ -37,6 +37,9 @@ Start-- code push -->CICD-Pipeline-- DAST Scan -->Target-Application--DAST Resul
 
 動的アプリケーションセキュリティ (DAST) のレベル 3 はレベル 2 と同じですが、特定されたすべてのセキュリティ脆弱性が一元管理された課題追跡システムに記録され、シークレット検出ツールの有効性を評価するために定期的にレビューされることが追加されています。つまり、同じタイプの自動スキャンが実行されていますが、将来の使用と改善のために結果が収集、追跡、分析されているのです。
 
+さらに、DAST を実装している成熟した組織は、CI/CD テンプレートの例や、プロキシ設定や OpenAPI 仕様 (OAS) ファイルのフェッチなどの組織固有の共通設定オプションなど、簡略化した設定ガイダンスをチームに提供することが多く、チーム間での DAST の採用をより簡単にします。
+
+
 ```mermaid
 graph LR; 
 Start-- code push -->CICD-Pipeline-- DAST Scan -->Target-Application--DAST Results -->Centralised-Issue-Tracker; Target-Application-- Code Deployment -->Finish
