@@ -79,7 +79,7 @@ DSOVS をより良いオープンソースプロジェクトにするために�
 
 🚧 [CODE-009 セキュア依存関係管理 (Secure Dependency Management)](document/CODE-009-Secure-Dependency-Management.md)
 
-### テスト (Test) Phase
+### テスト (Test) フェーズ
 
 🚧 [TEST-001 セキュリティテスト管理 (Security Test Management)](document/TEST-001-Security-Test-Management.md)
 
