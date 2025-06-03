@@ -42,7 +42,7 @@
 
 - [TEST-001 セキュリティテスト管理 (Security Test Management)](Document/document/TEST-001-Security-Test-Management.md)
 - [TEST-002 動的アプリケーションセキュリティテスト (Dynamic Application Security Testing, DAST)](Document/document/TEST-002-Dynamic-Application-Security-Testing-DAST.md)
-- [TEST-003 インタラクティブアプリケーションセキュリティテスト (Interactive Application Security Testing, IAST)](Document/document/TEST-003-Interactive-Application-Securit-Testing-IAST.md)
+- [TEST-003 インタラクティブアプリケーションセキュリティテスト (Interactive Application Security Testing, IAST)](Document/document/TEST-003-Interactive-Application-Security-Testing-IAST.md)
 - [TEST-004 ペネトレーションテスト (Penetration Testing)](Document/document/TEST-004-Penetration-Testing.md)
 - [TEST-005 セキュリティテストカバレッジ (Security Test Coverage)](Document/document/TEST-005-Security-Test-Coverage.md)
 

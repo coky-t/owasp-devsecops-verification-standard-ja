@@ -94,7 +94,7 @@ DSOVS をより良いオープンソースプロジェクトにするために�
 
 ✅ [TEST-002 動的アプリケーションセキュリティテスト (Dynamic Application Security Testing, DAST)](document/TEST-002-Dynamic-Application-Security-Testing-DAST.md)
 
-🚧 [TEST-003 インタラクティブアプリケーションセキュリティテスト (Interactive Application Security Testing, IAST)](document/TEST-003-Interactive-Application-Securit-Testing-IAST.md)
+🚧 [TEST-003 インタラクティブアプリケーションセキュリティテスト (Interactive Application Security Testing, IAST)](document/TEST-003-Interactive-Application-Security-Testing-IAST.md)
 
 🚧 [TEST-004 ペネトレーションテスト (Penetration Testing)](document/TEST-004-Penetration-Testing.md)
 
