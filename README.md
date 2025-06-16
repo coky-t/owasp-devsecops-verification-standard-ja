@@ -2,6 +2,9 @@
 
 This is the unofficial Japanese translation of the [OWASP DevSecOps Verification Standard (DSOVS)](https://github.com/OWASP/www-project-devsecops-verification-standard).
 
+- Document Site - <https://coky-t.gitbook.io/owasp-devsecops-verification-standard-ja/>
+- Document Repository - <https://github.com/coky-t/owasp-devsecops-verification-standard-ja>
+
 ### Originator
 
 - Project Site - <https://owasp.org/www-project-devsecops-verification-standard/>
@@ -75,3 +78,6 @@ This is the unofficial Japanese translation of the [OWASP DevSecOps Verification
 ## Translator (Japanese)
 
 [Koki Takeyama](https://github.com/coky-t)
+
+- Document Site - <https://coky-t.gitbook.io/owasp-docs-ja/>
+- Document Repository - <https://github.com/coky-t/owasp-docs-ja>
