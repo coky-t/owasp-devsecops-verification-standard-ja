@@ -18,18 +18,33 @@
 
 ## レベル 0 - 組織にはアプリケーションセキュリティ能力がない
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+The organisation has no recognised application security capability and no individuals tasked with advocating for secure development practices. Security knowledge is not consciously cultivated within the engineering teams, and there is no point of contact who can answer security questions or guide design and implementation decisions. As a result, security considerations depend entirely on the incidental experience of individual developers rather than any deliberate organisational function.
 
 ## レベル 1 - 一元管理されたアプリケーションセキュリティ機能や能力が存在し、対象分野の専門知識を提供している
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+A central application security function or team has been established to provide subject matter expertise to the wider organisation. Development teams can reach out to this group for guidance on threats, secure design, and remediation, which gives the organisation a consistent and authoritative source of security knowledge. While this represents a meaningful improvement over having no capability at all, the expertise remains concentrated in a single team and is delivered on request, so coverage across individual development teams is uneven and reactive rather than embedded in day-to-day delivery.
+
+```mermaid
+graph LR; Development-Team-- requests guidance -->Central-AppSec-Team;
+```
 
 ## レベル 2 - 各開発チーム内で活動する専任のセキュリティ担当者を任命している
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+The organisation has moved security expertise closer to where software is built by appointing a dedicated security champion within each development team. These champions are embedded developers who advocate for security inside their own teams, act as the first point of contact for security questions, and create a direct link back to the central application security function. Because every team now has a named individual responsible for promoting secure practices, security guidance is applied more consistently and earlier in the lifecycle, and issues are increasingly identified by the teams themselves rather than only during centralised review.
+
+```mermaid
+graph LR; Development-Team-- includes -->Security-Champion-- liaises with -->Central-AppSec-Team;
+```
 
 ## レベル 3 - 複数のセキュリティ分野の専門家集団が開発チーム内で担当者になっている
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Security expertise has matured to the point where multiple subject matter experts within a team are capable of acting as the security champion, removing reliance on any single person. The champion role is supported, rotated, and measured, with the organisation actively developing the depth of its security talent and tracking the effectiveness of the programme. This redundancy and ongoing investment make the security champion capability resilient and continuously improving, allowing the organisation to scale secure development practices as teams grow and to refine the programme in line with its evolving risk profile.
 
-## 参考情報
+```mermaid
+graph LR; Development-Team-- includes -->Champion-A & Champion-B-- rotated and measured -->Central-AppSec-Team;
+```
+
+## Further reading
+- [OWASP Security Culture Project](https://owasp.org/www-project-security-culture/) - Guidance on building a security culture, including how to establish and run a security champions programme.
+- [OWASP Security Champions Playbook](https://github.com/c0rdis/security-champions-playbook) - A practical, step-by-step playbook for identifying, nominating, and supporting security champions within development teams.
+- [OWASP SAMM - Education & Guidance](https://owaspsamm.org/model/governance/education-and-guidance/) - The SAMM governance practice covering how organisations grow security knowledge and embedded expertise such as champions.
