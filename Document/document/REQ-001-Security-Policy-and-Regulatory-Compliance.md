@@ -6,29 +6,51 @@
 
 ## 概要
 
-セキュリティポリシーと規制遵守は組織内のセキュリティベストプラクティスのベースラインを確立する一連の技術的、運用的、組織的な対策です。
+Security Policy and Regulatory Compliance is concerned with identifying the laws, regulations, and contractual obligations that apply to a software project and translating them into security policy the project must meet. Obligations such as GDPR, PCI DSS, and HIPAA impose specific requirements depending on the data an application handles and the markets it operates in.
 
-関連する規制への遵守を確保し、潜在的なセキュリティ脅威から保護することが重要です。
+The objective is to establish a clear baseline of what the organisation is required to do, verify that those obligations are being met, and keep that view current as regulations and business commitments change.
 
-DevSecOps は設計および開発プロセスにセキュリティを組み込むと同時に、自動化と効率的なメンテナンスを可能にもする、ソフトウェア開発へのアプローチです。
-
-組織が自体のシステムを保護するために積極的な措置を講じながら、業界の規制を満たしていることを確認するのに役立つため、セキュリティポリシーと規制遵守は DevSecOps の不可欠な部分になります。
+DevSecOps is an approach to software development that incorporates security into design and delivery while enabling automation and efficient maintenance. This makes security policy and regulatory compliance an integral part of DevSecOps, as it helps organisations meet their obligations continuously rather than treating compliance as a periodic, after-the-fact exercise.
 
 ## レベル 0 - 定期的なコンプライアンス検証活動を実施していない
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+The organisation has not identified which laws, regulations, or contractual obligations apply to the project, and there is no process to verify that these obligations are being met. Requirements such as GDPR, PCI DSS, or HIPAA may be relevant to the data the application handles, but no one has formally mapped them to the work being delivered. Any awareness of compliance tends to be incidental, residing in the knowledge of individual team members rather than in a repeatable activity.
+
+As a result, the project cannot demonstrate whether it satisfies its regulatory or contractual duties. Gaps surface only reactively, typically during an external audit, a customer security review, or after an incident has already occurred.
 
 ## レベル 1 - 定期的なコンプライアンス監査を実施し文書化している
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+The organisation has identified the applicable laws, regulations, and contractual obligations and has documented them, and a compliance audit is carried out on a periodic basis with its results recorded. This establishes a known baseline: the project can point to a written set of obligations and to evidence that it has been checked against them at least once in recent memory.
+
+At this level the activity is still largely manual and informal. Audits may be triggered by a calendar reminder or an upcoming deadline rather than embedded in the way the project is run, and the translation of obligations into concrete security policy may be inconsistent. Nevertheless, the documentation provides a foundation that later levels build upon.
+
+```mermaid
+graph LR; Regulations-- documented in -->Security-Policy-- periodic audit -->Compliance-Baseline;
+```
 
 ## レベル 2 - リアルタイムのコンプライアンス検証を実施し、その結果は自動的に一元管理された課題追跡システムに記録されている
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Compliance verification is integrated into the software development lifecycle rather than performed as a stand-alone exercise. Applicable obligations have been translated into explicit security policy that the project is expected to meet, and adherence is checked continuously as changes are made, so that deviations are surfaced close to the point at which they are introduced.
+
+Findings are routed into a centralised issue tracker so that compliance gaps are managed alongside other engineering work, with clear ownership and traceability. This consistent, integrated approach means that compliance is treated as a routine property of delivery rather than an event, and the project can show an ongoing record of how it has met its obligations.
+
+```mermaid
+graph LR; Regulations-- mapped to -->Security-Policy-- verified in -->SDLC-- findings -->Centralised-Issue-Tracker;
+```
 
 ## レベル 3 - コンプライアンスステータスを実施し、定期的なレビュースケジュールを定めている
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Compliance status is actively enforced and is governed by a defined periodic review schedule. The organisation does not merely detect deviations but maintains controls that keep the project within its policy boundaries, and the set of applicable obligations is revisited on a regular cadence so that new regulations, contractual changes, or shifts in the threat landscape are reflected in policy promptly.
 
-## 参考情報
-- https://owaspsamm.org/model/governance/policy-and-compliance/
+At this level the effectiveness of the compliance programme itself is measured and improved. Metrics such as the time taken to remediate findings, recurrence rates, and audit outcomes are tracked over time and used to refine the controls and the policy. Compliance thereby becomes a continuously improving capability that is aligned with the organisation's risk appetite rather than a static checklist.
+
+```mermaid
+graph LR; Regulations-- enforced via -->Security-Policy-- measured by -->Metrics-- scheduled review -->Security-Policy;
+```
+
+## Further reading
+- [NIST SP 800-218 Secure Software Development Framework (SSDF)](https://csrc.nist.gov/projects/ssdf) - Practices such as PO (Prepare the Organization) cover defining security requirements and meeting regulatory expectations across the lifecycle.
+- [OWASP SAMM - Policy & Compliance](https://owaspsamm.org/model/governance/policy-and-compliance/) - The Governance practice that this control aligns to, describing maturity in identifying obligations and verifying compliance.
+- [NIST Privacy Framework](https://www.nist.gov/privacy-framework) - A structure for mapping data protection obligations (such as those arising from GDPR) into organisational policy and controls.
+- [PCI Security Standards Council - Document Library](https://www.pcisecuritystandards.org/document_library/) - Authoritative source for the PCI DSS requirements that apply to systems handling cardholder data.
+- [HHS HIPAA Security Rule](https://www.hhs.gov/hipaa/for-professionals/security/index.html) - Reference for the safeguards required when handling protected health information.
