@@ -6,28 +6,51 @@
 
 ## 概要
 
-アプリケーションセキュリティ要件と標準はアプリケーションやシステムのセキュリティを確保するための一連のプロトコルとプロセスです。
+Application Security Requirements and Standards is concerned with defining concrete, testable security requirements for an application early in its lifecycle and aligning them with recognised industry standards and technology best practices. Frameworks such as the OWASP Application Security Verification Standard (ASVS) and the OWASP Mobile Application Security Verification Standard (MASVS) provide structured, verifiable requirements covering areas such as authentication, access control, data protection, and secure communication.
 
-これにはセキュアソフトウェア開発の原則とベストプラクティスの実装、およびユーザー認証、アプリケーションセキュリティ、データ暗号化、その他のセキュリティコントロールを確保するためのアクセスコントロール対策の配備が含まれます。
+Capturing these requirements up front, rather than retrofitting controls after the fact, ensures that security expectations are explicit, agreed, and able to be verified during design, development, and testing.
 
-アプリケーションセキュリティ要件と標準はアプリケーションが攻撃に対してセキュアで耐性があることを保証し、法律および規制要件への遵守を確保するのにも役立ちます。
-
-DevSecOps 環境では、アプリケーションがセキュアに開発され、安全にデプロイされ、長期にわたりセキュアであることを維持することを支援するにより、アプリケーションセキュリティ要件と標準は重要な役割を果たします。
+In a DevSecOps environment, well-defined security requirements and standards play an important role by ensuring that applications are developed securely, deployed safely, and remain aligned with current best practices over time.
 
 ## レベル 0 - 業界のセキュリティ標準や技術的なベストプラクティスに準拠していることを確認するための定期的な監査を実施していない
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+The project has no defined set of security requirements and makes no reference to recognised industry standards or technology best practices. Security expectations, where they exist at all, are implicit and depend on the individual judgement of whoever happens to be building a given feature. There is no audit or review to confirm that the application aligns with frameworks such as OWASP ASVS or MASVS.
+
+Because requirements are neither written down nor verified, the team cannot demonstrate which security properties the application is meant to uphold. Weaknesses are typically discovered late, during penetration testing or after an incident, rather than being prevented by clear requirements stated up front.
 
 ## レベル 1 - 業界のセキュリティ標準や技術的なベストプラクティスに準拠していることを確認するための定期的な監査を実施している
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+A set of security requirements has been documented with reference to industry standards, and a periodic audit is performed to check the application's alignment with them. The team can point to an agreed baseline, drawn from sources such as OWASP ASVS, OWASP MASVS, or the OWASP Proactive Controls, and to evidence that this baseline has been reviewed.
+
+At this level the requirements and the audit remain largely informal and detached from day-to-day delivery. Reviews tend to occur on a schedule or ahead of a release rather than being woven into design and development, so the requirements may lag behind the code and best practices may be applied unevenly across teams.
+
+```mermaid
+graph LR; OWASP-ASVS-- documents -->Security-Requirements-- periodic audit -->Alignment-Check;
+```
 
 ## レベル 2 - 業界のセキュリティ標準や技術的なベストプラクティスに準拠していることを確認するためのリアルタイム検証を実施している
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Security requirements are consistently applied and verification against industry standards is integrated into the software development lifecycle. Requirements derived from standards such as ASVS and MASVS are treated as first-class acceptance criteria, considered during design and checked continuously as the application evolves rather than only at periodic checkpoints.
+
+This integration means deviations from the agreed standards are surfaced close to the point at which they are introduced and can be addressed before they reach production. Security requirements thereby become a routine, expected part of how features are built and reviewed, providing an ongoing view of how well the application aligns with best practice.
+
+```mermaid
+graph LR; OWASP-ASVS-- defines -->Security-Requirements-- acceptance criteria -->SDLC-- verified by -->Tests;
+```
 
 ## レベル 3 - 適用可能な標準やベストプラクティスを実施し、定期的なレビュースケジュールを定めている
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+The applicable standards and best practices are actively enforced, and a defined periodic review schedule keeps the chosen requirements current. The organisation maintains controls that hold the project to its agreed requirements, and revisits the selected standards and the targeted ASVS or MASVS levels on a regular cadence so that emerging threats, new technologies, and updated guidance are reflected promptly.
 
-## 参考情報
+At this level the requirements programme is itself measured and improved. The organisation tracks indicators such as coverage of requirements, the rate at which deviations are found and fixed, and how requirements perform against real findings, and uses these to refine both the requirements and the way they are verified. Security requirements thus become a continuously improving capability aligned with the organisation's risk appetite.
+
+```mermaid
+graph LR; OWASP-ASVS-- enforced as -->Security-Requirements-- measured by -->Coverage-Metrics-- scheduled review -->OWASP-ASVS;
+```
+
+## Further reading
+- [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/) - A catalogue of testable web application security requirements organised into verification levels, ideal for defining requirements early.
+- [OWASP Mobile Application Security Verification Standard (MASVS)](https://mas.owasp.org/MASVS/) - The equivalent standard for mobile applications, providing verifiable security requirements for mobile platforms.
+- [OWASP Proactive Controls](https://owasp.org/www-project-proactive-controls/) - A developer-focused set of the most important security techniques to build into software from the outset.
+- [NIST SP 800-218 Secure Software Development Framework (SSDF)](https://csrc.nist.gov/projects/ssdf) - Includes practices for defining and communicating security requirements throughout the development lifecycle.
+- [OWASP SAMM - Security Requirements](https://owaspsamm.org/model/design/security-requirements/) - The SAMM Design practice describing maturity in eliciting and standardising security requirements.
