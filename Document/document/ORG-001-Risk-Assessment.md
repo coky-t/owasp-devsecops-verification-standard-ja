@@ -14,7 +14,7 @@
 
 ## レベル 0 - リスク評価活動を実施していない
 
-There is no evidence that the organisation performs any form of risk assessment across its projects, systems, or business processes. Potential vulnerabilities and threats are neither identified nor analysed, so decisions about features and architecture are made without any structured understanding of the security risks they introduce. As a result, the organisation cannot prioritise remediation effort or anticipate problems before they materialise.
+組織がそのプロジェクト、システム、ビジネスプロセスにわたって、何らかの形でリスク評価を実施しているという証拠はありません。潜在的な脆弱性や脅威が特定や分析されていないため、機能やアーキテクチャに関する決定は、それがもたらすセキュリティリスクの体系的な理解なしで下されています。結果として、組織は是正措置に優先順位付けたり、問題が顕在化する前に予測することができません。
 
 ## レベル 1 - 要求に応じてリスク評価業務を実施している
 
