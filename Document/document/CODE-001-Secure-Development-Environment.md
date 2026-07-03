@@ -18,9 +18,9 @@
 
 ## レベル 0 - 開発環境のセキュリティ堅牢化標準がない
 
-At this level of maturity there are no defined security hardening standards for developer machines or environments. Developers configure their own laptops, workstations, and local toolchains however they see fit, and there is no agreed baseline for operating system settings, disk encryption, patching, or access controls.
+この成熟度のレベルでは、開発者のマシンや環境に対する定義済みセキュリティ堅牢化標準はありません。開発者は自身のラップトップ、ワークステーション、ローカルツールチェーンを各自の思い通りに設定しており、オペレーティングシステムの設定、ディスク暗号化、パッチ適用、アクセス制御に関する合意されたベースラインはありません。
 
-Because every environment is set up differently and nothing is documented, the organisation has no way to know whether source code, credentials, or build tooling are adequately protected. Any security that exists is incidental and depends entirely on the individual developer.
+各環境はそれぞれ異なる設定であり、文書化もされていないため、組織はソースコード、クレデンシャル、ビルドツールが適切に保護されているかどうかを知る術がありません。存在するセキュリティは偶発的であり、完全に個々の開発者に依存しています。
 
 ## レベル 1 - 開発環境の堅牢化標準またはセキュリティチェックリストがある
 
