@@ -4,7 +4,7 @@ This is the unofficial Japanese translation of the [OWASP DevSecOps Verification
 
 **!!! Work In Progress !!!**
 
-- Document Site - <https://coky-t.gitbook.io/owasp-devsecops-verification-standard-ja/>
+<!-- - Document Site - <https://coky-t.gitbook.io/owasp-devsecops-verification-standard-ja/> -->
 - Document Repository - <https://github.com/coky-t/owasp-devsecops-verification-standard-ja>
 
 ### Originator
