@@ -24,9 +24,9 @@
 
 ## レベル 1 - 開発環境の堅牢化標準またはセキュリティチェックリストがある
 
-At this stage the organisation has produced written hardening standards or a security checklist that describes how a development environment should be configured. This typically covers items such as full-disk encryption, automatic screen locking, operating system and dependency patching, restricting administrative privileges, and keeping secrets out of source code.
+この段階では、組織は、開発環境の構成方法を定めた文書化された堅牢化標準やセキュリティチェックリストを作り出しています。これは一般的に、ディスク全体の暗号化、自動画面ロック、オペレーティングシステムや依存関係のパッチ適用、管理者権限の制限、ソースコードへのシークレットの保持回避といった項目をカバーします。
 
-The standard exists as guidance and is applied manually. Developers are expected to read the checklist and configure their own environments accordingly, and compliance is reviewed on an ad-hoc basis rather than being enforced automatically. This is an improvement over Level 0 because there is now a shared, documented baseline that everyone can be measured against, even if adherence still relies on individual effort.
+この標準はガイダンスとして存在し、手動で適用されます。開発者はチェックリストを読んで各自の環境を適切に設定することを求められ、準拠状況は自動的に強制されるのではなく必要に応じてレビューされます。遵守は依然として個人の取り組みに依存しますが、全員が基準にできる共有され、文書化されたベースラインがあるため、これはレベル 0 からの改善といえます。
 
 ```mermaid
 graph LR; Developer-- follows checklist -->Dev-Environment;
