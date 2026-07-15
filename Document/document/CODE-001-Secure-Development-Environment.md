@@ -34,9 +34,9 @@ graph LR; Developer-- follows checklist -->Dev-Environment;
 
 ## レベル 2 - 開発環境の堅牢化テンプレートを実装している
 
-Here the hardening standard is no longer just a document to follow by hand; it is implemented as a reusable, pre-configured template. This might take the form of a managed and golden machine image, a configuration-management profile (for example Ansible, Chef, or an MDM policy), or a containerised development environment such as a Dev Container that ships with the approved tooling and security settings baked in.
+ここでは堅牢化標準は単に手作業で従う文書に限りません。それは再使用可能かつ事前設定済みのテンプレートとして実装されています。これは、管理されたゴールデンマシンイメージ、構成管理プロファイル (Ansible, Chef, MDM ポリシーなど)、または承認済みツールやセキュリティ設定が組み込まれた Dev Container のようなコンテナ化された開発環境といった形態が考えられます。
 
-Because the secure baseline is delivered as a template, every developer starts from the same hardened state and the controls are applied consistently and repeatably instead of depending on each person to remember the checklist. Onboarding becomes faster and configuration drift between environments is significantly reduced.
+セキュアなベースラインはテンプレートとして提供されるため、すべての開発者が同じ堅牢化された状態から開始し、個人がチェックリストを覚えていることに依存するのではなく、一貫性があり繰り返し可能なようにコントロールが適用されます。オンボーディングが迅速になり、環境間の設定の乖離が大幅に低減されます。
 
 ```mermaid
 graph LR;
