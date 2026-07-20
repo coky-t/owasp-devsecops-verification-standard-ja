@@ -45,9 +45,9 @@ Developer-- provisions -->Hardened-Template-- pre-commit hooks -->Commit-- code 
 
 ## レベル 3 - 開発環境の堅牢化標準に沿ったセキュリティポリシーを適用している
 
-At the highest level of maturity the hardening standards are actively enforced rather than merely provided. Policies are applied and continuously monitored through tooling such as MDM/endpoint management, policy-as-code, and pre-commit or CI checks, so that non-compliant environments are detected and either remediated automatically or blocked from interacting with source code and pipelines.
+成熟度の最高レベルでは、堅牢化標準は単に提示されるだけでなく積極的に適用されます。MDM/エンドポイント管理、policy-as-code、pre-commit、CI チェックなどのツールを通して、ポリシーが適用され、継続的に監視されます。その結果、非準拠環境が検知され、自動的に是正されるか、ソースコードやパイプラインとのやり取りをブロックされます。
 
-Compliance status is tracked centrally, giving the organisation visibility into which environments meet the baseline and which do not. The effectiveness of the hardening standards is reviewed periodically and the templates and policies are improved over time to keep pace with new threats, changes in tooling, and the organisation's risk appetite. This builds on Level 2 by closing the gap between having a hardened template and guaranteeing it is consistently in force.
+準拠状況は一元的に追跡され、どの環境がベースラインを満たしており、どの環境が満たしていないかを組織が可視化できるようになります。堅牢化標準の有効性は定期的に見直され、新たな脅威、ツールの変更、組織のリスク許容度に合わせて、テンプレートとポリシーは経時的に改善されます。これはレベル 2 を土台として、堅牢化されたテンプレートを有することと、それが一貫して適用されていることを保証することとの間のギャップを埋めることです。
 
 ```mermaid
 graph LR;
