@@ -64,9 +64,9 @@ OWASP の公式プロジェクトは別として、このセクションのツ�
 
 ## [pre-commit](https://github.com/pre-commit/pre-commit)
 
-pre-commit is a framework for managing and maintaining multi-language Git pre-commit hooks. It lets you enforce hardening checks - such as detecting hardcoded secrets, blocking large or private-key files, and validating configuration - directly in the developer environment before code is ever committed. Running the same hooks both locally and in CI ensures the secure baseline is applied consistently across every developer's machine.
+pre-commit は、多言語 Git pre-commit フックを管理および保守するためのフレームワークです。ハードコードされたシークレットの検出、大容量ファイルや秘密鍵ファイルのブロック、設定のバリデーションなど、堅牢化チェックを、コードがコミットされる前に開発環境で直接実行できます。ローカルと CI の両方で同じフックを実行することで、すべての開発者のマシンでセキュアベースラインが一貫して適用されることを確保します。
 
-A typical `.pre-commit-config.yaml` defining a set of security and hygiene hooks:
+セキュリティと衛生フックのセットを定義する典型的な `.pre-commit-config.yaml`:
 
 ```yaml
 repos:
@@ -84,7 +84,7 @@ repos:
       - id: gitleaks
 ```
 
-Developers install the hooks once with `pre-commit install`, after which the checks run automatically on every commit.
+開発者は `pre-commit install` を用いて一度フックをインストールすると、後はコミットのたびにチェックが自動的に実行します。
 
 <a href="https://github.com/pre-commit/action"><img src="images/github.svg" width="20px"> GitHub Actions</a>
 
