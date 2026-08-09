@@ -109,9 +109,9 @@ jobs:
 
 ## [Development Containers](https://github.com/devcontainers)
 
-Development Containers (Dev Containers) let a project define its development environment as code in a `devcontainer.json` file. By describing the base image, tooling, extensions, and settings declaratively, every developer - and the CI pipeline - works from the same standardised, hardened environment, which directly supports the Level 2 "harden template" and Level 3 enforcement goals. Editors such as VS Code and platforms like GitHub Codespaces can build and open these containers automatically.
+Development Containers (Dev Containers) はプロジェクトの開発環境を `devcontainer.json` ファイル内でコードとして定義できます。ベースイメージ、ツール、拡張、設定を宣言的に記述することで、すべての開発者 (および CI パイプライン) は標準化され、堅牢化された同じ環境で作業し、レベル 2 「堅牢化テンプレート」とレベル 3 「強制適用」という目標を直接的に支援します。VS Code などのエディタや GitHub Codespaces などのプラットフォームはこれらのコンテナを自動的にビルドしてオープンできます。
 
-A minimal hardened `.devcontainer/devcontainer.json`:
+最小限で堅牢化された `.devcontainer/devcontainer.json`:
 
 ```json
 {
