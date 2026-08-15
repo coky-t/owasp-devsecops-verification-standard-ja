@@ -20,9 +20,9 @@
 
 ## レベル 0 - セキュリティコーディング標準がない
 
-At this level of maturity there is no manual secure code review taking place, and there are no security coding standards to guide developers. Code is written and merged based on functional correctness alone, with no documented expectations for how security concerns should be handled.
+この成熟度のレベルでは、手動のセキュアコードレビューがなく、開発者をガイドするセキュリティコーディングスタンダードもありません。コードは機能的な正しさのみに基づいて記述およびマージされており、セキュリティ上の懸念がどのように対処されるべきかについての明文化された要求もありません。
 
-Without any shared standard or review step, security defects depend entirely on the individual knowledge of whoever happens to write the code. Common weaknesses such as injection flaws, broken access control, or insecure handling of secrets can pass into production unnoticed because no one is specifically looking for them.
+共通の基準やレビューステップなしでは、セキュリティ上の欠陥は、たまたまそのコードを書いた人物の個々の知識に完全に依存します。インジェクションの欠陥、不備のあるアクセス制御、シークレットの安全でない取り扱いのようなよくある弱点は、それらを特に確認する者がいないため、気付かれないまま製品に組み込まれる恐れがあります。
 
 ## レベル 1 - セキュリティチェックリストがコーディング標準の一部となっている
 
@@ -56,7 +56,7 @@ graph LR;
 Developer-- opens -->Pull-Request-- Mandatory Security Review -->Peer-Reviewer--Findings -->Centralised-Issue-Tracker; Peer-Reviewer-- Approve -->Merge
 ```
 
-## Further reading
+## 参考情報
 - [OWASP Code Review Guide](https://owasp.org/www-project-code-review-guide/) - a comprehensive guide to performing manual secure code reviews and building a review process.
 - [OWASP SAMM - Design: Security Architecture](https://owaspsamm.org/model/design/security-architecture/) - guidance on establishing and reinforcing secure design and coding expectations.
 - [OWASP SAMM - Implementation: Secure Build](https://owaspsamm.org/model/implementation/secure-build/) - how review and standards fit into a repeatable, controlled build and delivery workflow.
