@@ -20,15 +20,15 @@
 
 ## レベル 0 - セキュリティコーディング標準がない
 
-この成熟度のレベルでは、手動のセキュアコードレビューがなく、開発者をガイドするセキュリティコーディングスタンダードもありません。コードは機能的な正しさのみに基づいて記述およびマージされており、セキュリティ上の懸念がどのように対処されるべきかについての明文化された要求もありません。
+この成熟度のレベルでは、手動のセキュアコードレビューがなく、開発者をガイドするセキュリティコーディング標準もありません。コードは機能的な正しさのみに基づいて記述およびマージされており、セキュリティ上の懸念がどのように対処されるべきかについての明文化された要求もありません。
 
 共通の基準やレビューステップなしでは、セキュリティ上の欠陥は、たまたまそのコードを書いた人物の個々の知識に完全に依存します。インジェクションの欠陥、不備のあるアクセス制御、シークレットの安全でない取り扱いのようなよくある弱点は、それらを特に確認する者がいないため、気付かれないまま製品に組み込まれる恐れがあります。
 
 ## レベル 1 - セキュリティチェックリストがコーディング標準の一部となっている
 
-At level one the organisation has begun to formalise its expectations by including a security checklist as part of its coding standards. The checklist captures the security concerns that reviewers and authors should keep in mind, such as input validation, output encoding, authentication and authorisation checks, error handling, and the safe use of cryptography and secrets.
+レベル 1 では、組織はコーディング標準の一部としてセキュリティチェックリストを含むことで、その要求を形式化し始めています。チェックリストは、入力バリデーション、出力エンコーディング、認証と認可のチェック、エラー処理、暗号技術とシークレットの安全な使用など、レビュー担当者と作成者が留意すべきセキュリティ上の懸念事項を捕捉しています。
 
-Manual secure code review at this stage is typically ad-hoc. Developers may consult the checklist and perform a review when they remember to or when a change feels risky, but it is not yet a required step in the workflow. The improvement over level zero is that there is now a documented, shared reference describing what a secure review should cover, even if its application is inconsistent.
+この段階での手動のセキュアコードレビューは一般的に場当たり的です。開発者は、思い出した時や変更にリスクを感じたときに、チェックリストを参照してレビューを実行することがありますが、ワークフローにおいて必須のステップにはなっていません。レベル 0 からの改善点は、セキュアレビューがカバーすべきことを記述した、文書化され共有された参照情報があることです (たとえ、その適用に一貫性がないとしても)。
 
 ```mermaid
 graph LR; Developer-- ad-hoc review -->Source-Code;
