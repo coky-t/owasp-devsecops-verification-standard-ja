@@ -36,9 +36,9 @@ graph LR; Developer-- ad-hoc review -->Source-Code;
 
 ## レベル 2 - セキュリティコーディング標準をピアレビューに使用している
 
-At level two, manual secure code review becomes a required part of the development workflow rather than an optional activity. The security checklist and coding standards are actively used during peer review, most commonly as a mandatory step on every pull request before code can be merged.
+レベル 2 では、手動のセキュアコードレビューは任意の活動ではなく、開発ワークフローの必須工程となります。セキュリティチェックリストやコーディング標準はピアレビューの際に積極的に使用され、最も一般的には、コードがマージされる前のすべてのプルリクエストでの必須のステップとなります。
 
-Reviewers are expected to work through the checklist and confirm that the relevant security concerns have been addressed, and the review is recorded as part of the merge process. This consistency is the key improvement over level one: instead of depending on whether an individual developer chooses to review for security, every change is examined against the same standard by a second person before it reaches the main branch.
+レビュー担当者はチェックリストに沿って作業を行い、関連するセキュリティ上の懸念が対処されていることを確認し、そのレビューがマージプロセスの一環として記録されることが期待されます。この一貫性はレベル 1 からの重要な改善点です。個々の開発者がセキュリティのレビューを選択するかどうかに委ねるのではなく、すべての変更がメインブランチに到達する前に、別の人物によって同一の標準で実行されます。
 
 ```mermaid
 graph LR;
