@@ -47,9 +47,9 @@ Developer-- opens -->Pull-Request-- Mandatory Security Review -->Peer-Reviewer--
 
 ## レベル 3 - 定期的なレビュースケジュールを定め、セキュリティコーディング標準をレビューしている
 
-At level three the practice is centrally tracked, measured, and continuously improved. Review activity and outcomes are captured so the organisation can report on coverage, such as the proportion of changes that received a security review, and on effectiveness, such as the types of issues found, missed, or repeated across teams.
+レベル 3 では、そのプラクティスが一元的に追跡され、測定され、継続的に改善されます。レビュー活動や結果が捕捉されるため、組織は、セキュリティレビューを受けた変更の割合といった網羅率や、発見された問題、見落とされた問題、チーム間で繰り返される問題の種類といった有効性について報告できます。
 
-A defined periodic review schedule ensures the security coding standard and its checklist do not become stale. The standard is revisited on a regular cadence and updated to reflect new threats, lessons learned from incidents and findings, changes in technology, and feedback from reviewers. The improvement over level two is that the review process itself is treated as a measurable control that is monitored and refined over time, rather than a fixed checklist applied indefinitely.
+定期的なレビュースケジュールを定義して、セキュリティコーディング標準やそのチェックリストが古くならないようにします。この標準は定期的に見直され、新たな脅威、インシデントや調査から得られた教訓、技術の変化、レビュー担当者からのフィードバックを反映して更新されます。レベル 2 からの改善点は、レビュープロセス自体が、固定されたチェックリストを永続的に適用するのではなく、経時的に監視および洗練される測定可能なコントロールとして扱われることです。
 
 ```mermaid
 graph LR;
