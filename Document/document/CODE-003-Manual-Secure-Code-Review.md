@@ -57,8 +57,8 @@ Developer-- opens -->Pull-Request-- Mandatory Security Review -->Peer-Reviewer--
 ```
 
 ## 参考情報
-- [OWASP Code Review Guide](https://owasp.org/www-project-code-review-guide/) - a comprehensive guide to performing manual secure code reviews and building a review process.
-- [OWASP SAMM - Design: Security Architecture](https://owaspsamm.org/model/design/security-architecture/) - guidance on establishing and reinforcing secure design and coding expectations.
-- [OWASP SAMM - Implementation: Secure Build](https://owaspsamm.org/model/implementation/secure-build/) - how review and standards fit into a repeatable, controlled build and delivery workflow.
-- [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/) - a catalogue of security requirements that can form the basis of a secure code review checklist.
-- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) - practical, topic-specific guidance useful when defining checklist items for common vulnerability classes.
+- [OWASP Code Review Guide](https://owasp.org/www-project-code-review-guide/) - 手動のセキュアコードレビューの実施や、レビュープロセスの構築のための包括的なガイドです。
+- [OWASP SAMM - Design: Security Architecture](https://owaspsamm.org/model/design/security-architecture/) - セキュアな設計とコーディングの要求を策定及び強化するためのガイダンスです。
+- [OWASP SAMM - Implementation: Secure Build](https://owaspsamm.org/model/implementation/secure-build/) - 反復可能で制御されたビルドおよびデリバリワークフローに、レビューや標準をどのように組み込むかを示します。
+- [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/) - セキュアコードレビューのチェックリストの基礎を形作ることができるセキュリティ要件のカタログです。
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) - 一般的に脆弱性クラスに対するチェックリスト項目を定義する際に役立つ、実践的でトピック別のガイダンスです。
