@@ -18,7 +18,7 @@
 
 ## レベル 0 - 静的コードセキュリティ解析を実施するためのツールがない
 
-At this level of security maturity, there are no tools available to perform Static Application Security Testing (SAST). Source code is written and shipped without any automated analysis of its security properties, so any vulnerabilities introduced during development remain undetected until they are found in later testing phases or, worse, in production.
+セキュリティ成熟度のこのレベルでは、静的アプリケーションセキュリティテスト (SAST) を実施するために利用できるツールがありません。ソースコードはそのセキュリティ特性の自動分析なしで記述されて出荷されるため、開発時に混入した脆弱性は、後続のテストフェーズや、悪くすると本番で発見されるまで、検出されないまま残ります。
 
 ## レベル 1 - オンデマンドスキャンを実行するツールを使用し、セキュアでないコードを特定している
 
