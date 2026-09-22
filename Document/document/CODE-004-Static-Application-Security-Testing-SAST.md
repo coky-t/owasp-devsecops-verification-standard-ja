@@ -22,7 +22,7 @@
 
 ## レベル 1 - オンデマンドスキャンを実行するツールを使用し、セキュアでないコードを特定している
 
-At this stage, a SAST tool is present but the scanning is performed on a case-by-case basis. A developer or security engineer runs the analyser manually against the source code when they choose to, rather than on a defined schedule or trigger. Because the process is not automated, scans are easily forgotten between releases and the results may not be reported or recorded in any consistent way.
+この段階では、SAST ツールは存在しますが、スキャンはケースバイケースに基づいて実施されます。開発者やセキュリティエンジニアは、所定のスケジュールやトリガーではなく、自身が選択した際にソースコードに対して手動で解析器を実行します。プロセスが自動化されていないため、スキャンはリリースの間に忘れられたり、結果が一貫した方法で報告や記録されていない可能性があります。
 
 ```mermaid
 graph LR; Start-- SAST Scan -->Source-Code;
