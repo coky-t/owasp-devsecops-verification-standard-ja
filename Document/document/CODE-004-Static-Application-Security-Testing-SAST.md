@@ -30,7 +30,7 @@ graph LR; Start-- SAST Scan -->Source-Code;
 
 ## レベル 2 - ビルドパイプラインにセキュリティ静的コード解析のスキャンツールを実装し、自動スキャンを実行し、ビルドのステータスをレポートしている
 
-Here, SAST scanning is implemented into the software build pipeline. This means that whenever a build is executed, an automated static analysis of the source code is triggered and the results are reported back to the build. Developers receive consistent, repeatable feedback on insecure code with every push, and the pipeline can be configured to fail or flag a build when issues of a given severity are detected.
+ここでは、SAST スキャンはソフトウェアビルドパイプラインに導入されています。これはつまり、ビルドが実行されるたびに、ソースコードの自動静的解析がトリガーされ、その結果がビルドに戻って報告されます。開発者はプッシュのたびに安全でないコードの一貫した再現可能なフィードバックを受け取ります。また、特定の重大度の問題が検出された際に、ビルドを失敗したりフラグを立てるようにパイプラインを設定できます。
 
 ```mermaid
 graph LR;
