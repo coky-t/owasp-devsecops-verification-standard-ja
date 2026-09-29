@@ -39,9 +39,9 @@ Start-- code push -->CICD-Pipeline-- SAST Scan -->Source-Code--SAST Results -->C
 
 ## レベル 3 - 発見された内容が自動的に一元管理された課題追跡システムに記録されており、ツールの有効性を定期的にレビューしている
 
-Level 3 of SAST is the same as level 2, with the addition of all identified security vulnerabilities being recorded in a centralised issue tracking system and periodically reviewed to evaluate the effectiveness of the SAST tool. The same automated scans run on every build, but the results are now collected, tracked and analysed over time so that findings can be triaged, assigned and remediated through an established workflow.
+SAST のレベル 3 はレベル 2 の内容に加え、特定されたすべてのセキュリティ脆弱性が一元的な課題追跡システムに記録され、SAST ツールの有効性を評価するために定期的にレビューします。すべてのビルドで同様の自動スキャンが実行されますが、その結果は経時的に収集、追跡、解析され、その所見は確立されたワークフローを通じてトリアージ、割り当て、修正されます。
 
-Reviewing the tool's effectiveness also allows teams to tune rule sets, suppress false positives and confirm that the analyser is keeping pace with the languages and frameworks in use. More mature organisations often provide teams with shared CI/CD templates and baseline configurations, making consistent SAST adoption across the organisation considerably easier.
+ツールの有効性をレビューすることで、チームはルールセットを調整したり、誤検知を抑制したり、使用している言語やフレームワークで解析器が追従しているかどうかを確認することも可能です。より成熟した組織では、共有された CI/CD テンプレートやベースラインの設定をチームに提供していることが多く、組織全体にわたる一貫した SAST の導入を非常に容易になります。
 
 ```mermaid
 graph LR;
