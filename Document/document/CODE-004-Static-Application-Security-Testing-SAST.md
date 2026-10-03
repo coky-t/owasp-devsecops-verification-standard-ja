@@ -48,13 +48,13 @@ graph LR;
 Start-- code push -->CICD-Pipeline-- SAST Scan -->Source-Code--SAST Results -->Centralised-Issue-Tracker; CICD-Pipeline-- Build -->Finish
 ```
 
-# Notable Tools
+# 注目すべきツール
 
-⚠️ **Disclaimer**
+⚠️ **免責事項**
 
-Apart from official OWASP Projects, the tools in this section have been chosen on the basis of their proven capabilities alone and there is no other relationship between the DSOVS project leaders and the creators or vendors who maintain them. 
+OWASP の公式プロジェクトは別として、このセクションのツールはその実績のある機能のみに基づいて選択されており、DSOVS プロジェクトリーダーとそれらを保守する作成者やベンダーとの間には他の関係はありません。
 
-If you have a suggestion for a notable tool please [💡 Suggest a Tool](https://github.com/OWASP/www-project-devsecops-verification-standard/discussions/categories/ideas) 
+注目すべきツールの提案がある場合には [💡 ツールを提案](https://github.com/OWASP/www-project-devsecops-verification-standard/discussions/categories/ideas) してください。
 
 ## [Semgrep](https://github.com/semgrep/semgrep)
 
