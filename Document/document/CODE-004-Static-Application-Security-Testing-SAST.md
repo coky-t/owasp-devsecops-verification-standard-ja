@@ -58,7 +58,7 @@ OWASP の公式プロジェクトは別として、このセクションのツ�
 
 ## [Semgrep](https://github.com/semgrep/semgrep)
 
-Semgrep is a fast, open-source static analysis engine for finding bugs, detecting vulnerabilities and enforcing code standards. It supports more than 30 languages and uses an intuitive, pattern-based rule syntax that closely resembles the source code being scanned, making it straightforward to write custom rules alongside the large community rule registry.
+Semgrep は、バグの発見、脆弱性の検出、コード規約の適用のための高速なオープンソース静的解析エンジンです。30 以上の言語をサポートしており、スキャン対象のソースコードに酷似した、直感的でパターンベースのルール構文を使用し、大規模なコミュニティルールレジストリと並んで、カスタムルールを容易に作成することが可能です。
 
 <a href="https://semgrep.dev/docs/semgrep-ci/sample-ci-configs"><img src="images/github.svg" width="20px"> GitHub Actions
 
