@@ -107,7 +107,7 @@ semgrep:
 
 ## [CodeQL](https://github.com/github/codeql-action)
 
-CodeQL is GitHub's semantic code analysis engine. It treats code as data, building a queryable database from a codebase so that security researchers and developers can express vulnerability patterns as declarative queries. CodeQL ships with an extensive library of security queries and integrates natively with GitHub's code scanning to surface results directly in pull requests.
+CodeQL は GitHub のセマンティックコード解析エンジンです。コードをデータとして扱い、コードベースからクエリ可能なデータベースを構築することで、セキュリティ研究者や開発者が脆弱性パターンを宣言的なクエリとして表現できます。CodeQL は、セキュリティクエリの広範なライブラリが付属しており、GitHub のコードスキャンをネイティブに統合し、結果をプルリクエストで直接表面化します。
 
 <a href="https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning"><img src="images/github.svg" width="20px"> GitHub Actions
 
