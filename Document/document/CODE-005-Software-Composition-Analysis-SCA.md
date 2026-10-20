@@ -18,7 +18,7 @@
 
 ## レベル 0 - サードパーティ依存関係解析を実施するためのツールがない
 
-At this level of security maturity, there are no tools available to perform software composition analysis. The open-source and third-party components an application depends on are not inventoried, and there is no visibility into the known vulnerabilities or licensing obligations that those components introduce.
+セキュリティ成熟度のこのレベルでは、ソフトウェアコンポジション解析を実施するために利用できるツールはありません。アプリケーションが依存するオープンソースやサードパーティのコンポーネントはインベントリ化されておらず、それらのコンポーネントがもたらす既知の脆弱性やライセンス義務について可視性がありません。
 
 ## レベル 1 - オンデマンドスキャンを実行するツールを使用し、アプリケーションで使用されている古いまたはセキュアでないサードパーティコンポーネントを特定している
 
