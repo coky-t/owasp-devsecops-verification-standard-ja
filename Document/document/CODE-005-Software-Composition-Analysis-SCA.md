@@ -22,7 +22,7 @@
 
 ## レベル 1 - オンデマンドスキャンを実行するツールを使用し、アプリケーションで使用されている古いまたはセキュアでないサードパーティコンポーネントを特定している
 
-At this stage, an SCA tool is present but the scanning is performed on a case-by-case basis. A developer or security engineer runs the tool manually against a project to enumerate its dependencies and check them against vulnerability and license databases. Because these scans are run ad hoc rather than on a schedule or trigger, they are easily forgotten, and the results may not be reported or recorded in a consistent way.
+この段階では、SCA ツールが存在しますが、スキャンはケースバイケースに基づいて実施されます。開発者やセキュリティエンジニアはプロジェクトに対して手動でツールを実行し、その依存関係を列挙して、それらを脆弱性データベースやライセンスデータベースに対してチェックします。これらのスキャンは、スケジュールやトリガーではなく、アドホックに実行されるため、それらは容易に忘れられやすく、その結果は一貫した方法で報告や記録されないままになる恐れがあります。
 
 ```mermaid
 graph LR; Start-- SCA Scan -->Application-Dependencies;
