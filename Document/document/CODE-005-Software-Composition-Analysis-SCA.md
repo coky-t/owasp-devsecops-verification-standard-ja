@@ -30,7 +30,7 @@ graph LR; Start-- SCA Scan -->Application-Dependencies;
 
 ## レベル 2 - ビルドパイプラインにサードパーティコンポーネント脆弱性のスキャンツールを実装し、自動スキャンを実行し、ビルドのステータスをレポートしている
 
-Here, SCA scanning is implemented into the software build pipeline. Whenever a build is executed, the tool automatically resolves the application's dependency tree, generates a software bill of materials (SBOM), and checks each component against known vulnerability and license data, reporting the status back to the build. This ensures that every change is consistently evaluated for vulnerable or non-compliant third-party components before it progresses, and the pipeline can be configured to fail the build when high-severity issues are detected.
+ここでは、SCA スキャンはソフトウェアのビルドパイプラインに実装されています。ビルドが実行されるたびに、このツールがアプリケーションの依存関係ツリーを自動的に解決し、ソフトウェア部品表 (SBOM) を生成し、各コンポーネントを既知の脆弱性やライセンスデータに対してチェックし、その状態をビルドに報告します。これは、変更のたびに、脆弱性があるコンポーネントや非遵守のサードパーティコンポーネントについて、それが進行する前に一貫して評価されるようにします。また、パイプラインを設定して、深刻度の高い問題が検出された場合にビルドを失敗することが可能です。
 
 ```mermaid
 graph LR;
